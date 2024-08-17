@@ -24,6 +24,7 @@ ul{
     float: right !important;
     width: 75%;
     transition: 0.2s linear;
+    background-color: var(--secondary-color);
 }
 
 /* sidebar.css  */
