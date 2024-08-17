@@ -18,6 +18,7 @@ ul{
     --text-color: #fff;
     --title-font: 'Bree Serif', sans-serif;
     --btn-bg    : #0066ff;
+    --scrollbar-color: rgb(176, 176, 176);
 }
 .container{
     float: right !important;
@@ -43,6 +44,12 @@ ul{
 a.nav-link:hover{
     color: var(--text-color);
 }
+
+.admin_area::-webkit-scrollbar{width: 8px;}
+.admin_area::-webkit-scrollbar-thumb{background: var(--scrollbar-color); border-radius: 10px; height: 10px;}
+.admin_area::-webkit-scrollbar-track{background: var(--secondary-color); border-radius: 10px;}
+.dropdown-toggle:focus{outline: none !important;}
+.sidebar_wrapper{z-index: 999;}
 /* main-content.css  */
 
 .card{
@@ -56,4 +63,7 @@ a.nav-link:hover{
 .container_expand{
     width: 100% !important;
     float: none !important;
+}
+.bg_color{
+    background-color: var(--secondary-color) !important;
 }
