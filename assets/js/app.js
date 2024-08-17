@@ -80,6 +80,7 @@
     //  sidebar collapse
     $('.sidebarCollapse').on('click', function() {
       $(".sidebar").animate({width:'toggle'},350);
+      $('.container').toggleClass('container_expand');
     });
     
 

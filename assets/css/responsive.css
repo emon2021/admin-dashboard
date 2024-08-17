@@ -7,9 +7,10 @@
         margin: 0.5rem 0rem;
         z-index: -999;
     }
-    .navbar {
-        z-index: 9999;
-        background-color: var(--secondary-color);
-        padding: 1rem;
+    .container{
+        width: 100% !important;
+        float: none !important;
     }
+    
 }
+
