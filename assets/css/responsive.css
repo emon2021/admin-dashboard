@@ -1,0 +1,15 @@
+@media(max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .info_wrapper{
+        margin: 0.5rem 0rem;
+        z-index: -999;
+    }
+    .navbar {
+        z-index: 9999;
+        background-color: var(--secondary-color);
+        padding: 1rem;
+    }
+}
