@@ -34,8 +34,14 @@ ul{
 .admin_profile{
     color: var(--text-color);
     background-color: var(--admin-profile);
-
 }
+.admin_area::-webkit-scrollbar{width: 8px;}
+.admin_area::-webkit-scrollbar-thumb{background: var(--scrollbar-color); border-radius: 10px; height: 10px;}
+.admin_area::-webkit-scrollbar-track{background: var(--secondary-color); border-radius: 10px;}
+.admin_area{overflow-y: hidden !important; transition: 0.2s linear;}
+.admin_area:hover{overflow-y: scroll !important;}
+.dropdown-toggle:focus{outline: none !important;}
+.sidebar_wrapper{z-index: 999;}
 /* navbar.css  */
 .nav-link{
     color: var(--text-color);
@@ -44,14 +50,9 @@ ul{
 a.nav-link:hover{
     color: var(--text-color);
 }
+.dropdown{font-family: var(--title-font);}
 
-.admin_area::-webkit-scrollbar{width: 8px;}
-.admin_area::-webkit-scrollbar-thumb{background: var(--scrollbar-color); border-radius: 10px; height: 10px;}
-.admin_area::-webkit-scrollbar-track{background: var(--secondary-color); border-radius: 10px;}
-.dropdown-toggle:focus{outline: none !important;}
-.sidebar_wrapper{z-index: 999;}
 /* main-content.css  */
-
 .card{
     background-color: var(--main-color);
     color: var(--text-color);
@@ -66,4 +67,14 @@ a.nav-link:hover{
 }
 .bg_color{
     background-color: var(--secondary-color) !important;
+}
+/*========= login.page.css =========*/
+.login_wrapper{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-family: var(--title-font);
+}
+.btn_login{
+    background-color: var(--btn-bg);
+    border-color: var(--btn-bg);
 }
